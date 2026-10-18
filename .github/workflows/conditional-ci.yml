@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build step
-        run: echo "BUILDING STEP"
+        run: echo "BUILDING STEP AGAIN"
   test:
     if: startsWith(github.ref, 'refs/heads/feature/')
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Test step
-        run: echo "TESTING STEP"
+        run: echo "TESTING STEP AGAIN"
 
 
